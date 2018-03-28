@@ -1,4 +1,4 @@
-    $(function () {
+$(function () {
 
     var eixoX = { // coloque aqui o texto correspondente a cada ponto do eixo X
         10: 'Técnica X-1',
