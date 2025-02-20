@@ -1,11 +1,11 @@
 var dados = null;
 var labelsX = [];
 var labelsY = [];
-obterDados("../comum/dados.csv");
+obterDados("../comum/finalidade-vs-recursos.csv");
 
 /* Configurações deste gráfico */
 let GRAFICO = {
-  titulo: "Título",
+  titulo: "",
   largura: 800,
   altura: 400,
   corPrincipal: "#f53b57",
