@@ -26,6 +26,8 @@ $(function () {
       type: "bubble",
       plotBorderWidth: 1,
       zoomType: "xy",
+      marginLeft: 180,
+      marginRight: 80,
     },
 
     exporting: {
