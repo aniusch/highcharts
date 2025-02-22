@@ -6,8 +6,8 @@ obterDados("../comum/finalidade-vs-recursos.csv");
 /* Configurações deste gráfico */
 let GRAFICO = {
   titulo: "",
-  largura: 800,
-  altura: 400,
+  largura: 900,
+  altura: 450,
   corPrincipal: "#f53b57",
 
   eixoX: {
@@ -27,7 +27,7 @@ $(function () {
       plotBorderWidth: 1,
       zoomType: "xy",
       marginLeft: 180,
-      marginRight: 80,
+      marginRight: 60,
     },
 
     exporting: {
