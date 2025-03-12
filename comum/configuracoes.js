@@ -1,21 +1,15 @@
-const DEFINICOES = {
-    fonte: 'Sora',
-    cor: '#333',
-
-    titulo: {
-        tamanho: '36px',
-    },
-
-    rotulos: {
-        tamanho: '17px',
-        cor: '#333',
-    },
-
-    series: {
-        tamanho: '17px',
-        cor: '#333',
-    },
-
-
-
+let DEFINICOES = {
+  fonte: "Arial, sans-serif",
+  peso: "600",
+  cor: "#555",
+  titulo: {
+    tamanho: "1.2em",
+  },
+  rotulos: {
+    tamanho: "1.2em",
+    cor: "#000",
+  },
+  series: {
+    tamanho: "0.9em",
+  },
 };

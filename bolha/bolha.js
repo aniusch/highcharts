@@ -3,7 +3,6 @@ var labelsX = [];
 var labelsY = [];
 obterDados("../comum/finalidade-vs-recursos.csv");
 
-/* Configurações deste gráfico */
 let GRAFICO = {
   titulo: "",
   largura: 900,
@@ -49,7 +48,7 @@ $(function () {
         fontSize: DEFINICOES.titulo.tamanho,
         fontFamily: DEFINICOES.fonte,
         color: DEFINICOES.cor,
-        fontWeight: 600,
+        fontWeight: DEFINICOES.peso,
       },
     },
 
@@ -64,6 +63,7 @@ $(function () {
           fontSize: DEFINICOES.rotulos.tamanho,
           fontFamily: DEFINICOES.fonte,
           color: DEFINICOES.rotulos.cor,
+          fontWeight: DEFINICOES.peso,
         },
         formatter: function () {
           var value = labelsX[this.value];
@@ -84,6 +84,7 @@ $(function () {
           fontSize: DEFINICOES.rotulos.tamanho,
           fontFamily: DEFINICOES.fonte,
           color: DEFINICOES.rotulos.cor,
+          fontWeight: DEFINICOES.peso,
         },
 
         formatter: function () {
@@ -91,7 +92,6 @@ $(function () {
           return value !== "undefined" ? value : this.value;
         },
       },
-      minPadding: 00,
     },
 
     plotOptions: {
