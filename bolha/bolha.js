@@ -1,30 +1,30 @@
 var dados = null;
 var labelsX = [];
 var labelsY = [];
-obterDados("../comum/finalidade-vs-recursos.csv");
+obterDados('../comum/fvsr.csv');
 
 let GRAFICO = {
-  titulo: "",
+  titulo: '',
   largura: 900,
   altura: 450,
-  corPrincipal: "#f53b57",
+  corPrincipal: '#f53b57',
 
   eixoX: {
-    titulo: "",
+    titulo: '',
     invertido: false,
   },
   eixoY: {
-    titulo: "",
+    titulo: '',
     invertido: false,
   },
 };
 
 $(function () {
-  Highcharts.chart("container", {
+  Highcharts.chart('container', {
     chart: {
-      type: "bubble",
+      type: 'bubble',
       plotBorderWidth: 1,
-      zoomType: "xy",
+      zoomType: 'xy',
       marginLeft: 180,
       marginRight: 60,
     },
@@ -67,7 +67,7 @@ $(function () {
         },
         formatter: function () {
           var value = labelsX[this.value];
-          return value !== "undefined" ? value : this.value;
+          return value !== 'undefined' ? value : this.value;
         },
       },
     },
@@ -89,7 +89,7 @@ $(function () {
 
         formatter: function () {
           var value = labelsY[this.value];
-          return value !== "undefined" ? value : this.value;
+          return value !== 'undefined' ? value : this.value;
         },
       },
     },
@@ -98,7 +98,7 @@ $(function () {
       series: {
         dataLabels: {
           enabled: true, // exibe a informação do eixo Z na bolha
-          format: "{point.z}",
+          format: '{point.z}',
         },
       },
       bubble: {
